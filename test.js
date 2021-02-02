@@ -1,4 +1,5 @@
 
+console.log("TEST");
 (function () {
     console.log("IIFE Init");
     if (typeof window !== 'undefined') {
