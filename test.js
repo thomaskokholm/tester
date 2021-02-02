@@ -1,8 +1,15 @@
-if (typeof window !== 'undefined') {
-    const url = window.location.href;
-    if (url.includes('fifaplus')) {
-      body.classList.add("fifaplus");
-    } else {
-      body.classList.remove("fifaplus");
+
+(function () {
+    console.log("IIFE Init");
+    if (typeof window !== 'undefined') {
+        console.log("Window not undefined");
+        const url = window.location.href;
+        if (url.includes('fifaplus')) {
+            console.log("URL includes");
+          body.classList.add("fifaplus");
+        } else {
+            console.log("URL does not include");
+          body.classList.remove("fifaplus");
+        }
     }
-}
+})();
